@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div>
+                <a href="#" class="nav__logo">Expense Tracker</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#tracker" class="nav__link">Tracker</a></li>
+                    <li class="nav__item"><a href="#dashboard" class="nav__link">Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--HOME-->
+        <section class="home" id="home">
+            <div class="home__container bg-grid">
+                <!--
+                <div class="home__img">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+                -->
+                <div class="home__data">
+                    <span>Welcome to,</span>
+                    <h1 class="home__title">Expense Tracker</h1>
+                    <p class="home__description">Let's manage our Expenses.</p>
+                    <a href="#tracker" class="home__button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT-->
+        <section class="about" id="about">
+            <h2 class="section__title">About</h2>    
+            <div class="about__container bg-grid">
+                <div class="about__data">
+                    <p class="about__description">Expense Tracker is a web-based application that helps individuals and businesses to track and manage their expenses effectively. With this application, users can easily monitor their spending habits, set budgets, and keep track of their financial transactions. <br>  <br>
+                         The goal is to provide a simple and user-friendly interface that allows users to manage their expenses effortlessly.Whether you are an individual looking to track your personal expenses or a business owner trying to keep track of your financial transactions, Expense Tracker is the perfect solution for you. <br>  
+                     <br>
+                    Let's get started.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--TRACKER-->
+        <section class="tracker" id="tracker">
+            <div class="section__title">
+                Tracker
+            </div>
+
+                <div class="tracker__container">
+                    <h1>Your balance</h1>
+
+                    <h1 class="balance">
+                        <i class='bx bx-rupee tracker__icon'></i>0.00
+                    </h1>
+
+                    <div class="inc-exp-container">
+                        <div>
+                            <h2>Income</h2>
+
+                            <p class="money__plus" id="money-plus">
+                                +<i class='bx bx-rupee tracker__icon'></i>0.00
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Expense</h2>
+                            <p class="money__minus" id="money-minus">
+                                -<i class='bx bx-rupee tracker__icon'></i>0.00
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3>History</h3>
+                    <ul class="list" id="list">
+                        <li class="minus">
+                            Cash <span>-<i class='bx bx-rupee tracker__icon'></i>400</span><button class="delete__btn">x</button>
+                        </li>
+                    </ul>
+
+                    <h3>Add New Transitions</h3>
+                    <form action="" id="form">
+                        <div class="form__control">
+                            <label for="Text">Text</label>
+                            <input type="text" id="text" placeholder="Enter-text">
+                        </div>
+
+                        <div class="form__control">
+                            <label for="amount">Amount</label>
+                            <input type="number" id="amount" placeholder="Enter-Amount">
+                        </div>
+
+                        <button class="btn">All Transactions</button>
+                    </form>
+                </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
